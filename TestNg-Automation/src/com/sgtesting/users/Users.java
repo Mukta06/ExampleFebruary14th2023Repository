@@ -6,17 +6,32 @@ import org.testng.annotations.Test;
 
 public class Users 
 {
-	@Test
+	@Test(priority=1)
 	public void createUser() 
 	{
 		System.out.println("DemoUser1 has been created successfully");
 		
 	}
 	
-	@Test
+	@Test(priority=4,dependsOnMethods = "createUser")
+	
 	public void deleteUser() 
 	{
 		System.out.println("DemoUser1 has been deleted successfully");
+		
+	}
+	
+	@Test(priority=2)
+	public void modifyUser() 
+	{
+		System.out.println("DemoUser1 has been modified successfully");
+		
+	}
+	
+	@Test(priority=3,dependsOnMethods = {"modifyUser","createUser"})
+	public void addCustomer() 
+	{
+		System.out.println("Customer has been added successfully");
 		
 	}
 	

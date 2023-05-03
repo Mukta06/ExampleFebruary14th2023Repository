@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="testcases">
+	<test name="User">
+		<parameter name="username" value="Mukta_User"></parameter>
+		<classes>
+			<class
+				name="com.sgtesting.parameterizedtestcases.ParameterizedUsers"></class>
+		</classes>
+	</test>
+</suite>
