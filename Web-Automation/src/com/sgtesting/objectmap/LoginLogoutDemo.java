@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LoginLogoutDemo {
 
 	private static WebDriver oBrowser=null;
-	public static ObjectMap om=null
+	public static ObjectMap om=null;
 	public static void main(String[] args) {
 		launchBrowser();
 		navigate();
